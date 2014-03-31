@@ -1,0 +1,8 @@
+debian/files
+debian/changelog
+debian/safrm-net-fw.debhelper.log
+debian/safrm-net-fw.substvars
+debian/safrm-net-fw/*
+rpm/*
+*.changes
+*~
