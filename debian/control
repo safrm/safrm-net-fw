@@ -9,6 +9,6 @@ Homepage: http://safrm.net/
 Package: safrm-net-fw
 Architecture: all
 Depends: af, appver, easybrain, efind, gr-scripts, jenkins-support-scripts,  pkgcheck, rpmmake, semaphored, xmlenv
-Description: Collection of useful utilities \
+Description: Collection of useful utilities in metapackage \
 	from safrm.net
 
