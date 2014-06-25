@@ -14,9 +14,20 @@ Autoreq:    on
 Autoreqprov: on
 BuildRequires: appver >= 1.1.1
 BuildRequires: jenkins-support-scripts >= 1.2.3
+Requires: af
+Requires: appver
+Requires: easybrain 
+Requires: efind 
+Requires: gr-scripts
+Requires: jenkins-support-scripts 
+Requires: pkgcheck 
+Requires: rpmmake
+Requires: rvmb
+Requires: semaphored
+Requires: xmlenv
 
 %description
-Collection of useful utilities \
+Collection of useful utilities in metapackage \
 	from safrm.net
 
 %prep
