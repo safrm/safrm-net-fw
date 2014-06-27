@@ -8,7 +8,19 @@ Homepage: http://safrm.net/
 
 Package: safrm-net-fw
 Architecture: all
-Depends: af, appver, easybrain, efind, gr-scripts, jenkins-support-scripts,  pkgcheck, rpmmake, semaphored, xmlenv
+Depends: safrm-net-fw-base, safrm-net-fw-gui, rvmb
 Description: Collection of useful utilities in metapackage \
+	from safrm.net
+
+Package: safrm-net-fw-base
+Architecture: all
+Depends: af, appver, efind, gr-scripts, jenkins-support-scripts,  pkgcheck, rpmmake, xmlenv
+Description: Subset of useful utilities in metapackage without gui \
+	from safrm.net
+
+Package: safrm-net-fw-gui
+Architecture: all
+Depends: easybrain, semaphored
+Description: Subset of useful utilities in metapackage  with gui\
 	from safrm.net
 

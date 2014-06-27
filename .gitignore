@@ -1,8 +1,10 @@
 debian/files
 debian/changelog
-debian/safrm-net-fw.debhelper.log
-debian/safrm-net-fw.substvars
-debian/safrm-net-fw/*
+debian/*.log
+debian/*.substvars
+debian/safrm-net-fw/
+debian/safrm-net-fw-base/
+debian/safrm-net-fw-gui/
 rpm/*
 *.changes
 *~

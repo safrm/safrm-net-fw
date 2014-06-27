@@ -14,21 +14,38 @@ Autoreq:    on
 Autoreqprov: on
 BuildRequires: appver >= 1.1.1
 BuildRequires: jenkins-support-scripts >= 1.2.3
+Requires:   %{name} = %{version}-%{release}-base
+Requires:   %{name} = %{version}-%{release}-gui
+Requires: rvmb
+
+%description
+Collection of useful utilities in metapackage \
+	from safrm.net
+
+%package base
+Summary:    Utilities from safrm.net  without GUI
+Group:      Development/Tools
 Requires: af
 Requires: appver
-Requires: easybrain 
 Requires: efind 
 Requires: gr-scripts
 Requires: jenkins-support-scripts 
 Requires: pkgcheck 
 Requires: rpmmake
-Requires: rvmb
-Requires: semaphored
 Requires: xmlenv
 
-%description
-Collection of useful utilities in metapackage \
-	from safrm.net
+%description base
+Subset of utilities from safrm.net  without GUI
+
+%package gui
+Summary:    GUI Utilities from safrm.net 
+Group:      Development/Tools
+Requires: easybrain 
+Requires: semaphored
+
+%description gui 
+Subset of utilities from safrm.net  wit GUI
+
 
 %prep
 %setup -c -n ./%{name}-%{version}
@@ -43,5 +60,8 @@ rm -fr %{buildroot}
 
 %check
 
+
+%files base
+%files gui
 %files
 
